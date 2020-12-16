@@ -5,4 +5,4 @@
 
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
-![Super-Linter](https://github.com/SergeyKornienko/python-project-lvl1/workflows/Super-Linter/badge.svg?branch=SergeyKornienko-patch-1)
+![Super-Linter](https://github.com/SergeyKornienko/python-project-lvl1/workflows/Super-Linter/badge.svg)

@@ -1,14 +1,14 @@
 install:
-		poerty install 
+		poetry install 
 
 brain-games:
-		poerty run brain-games
+		poetry run brain-games
 
 build:
-		poerty build
+		poetry build
 
 publish:
-		poerty publish --dry-run
+		poetry publish --dry-run
 
 package-install:
 		pip install --user dist/*.whl

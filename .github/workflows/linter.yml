@@ -8,6 +8,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - run: npm install poetry
+
       - name: Run Linter
         run: make lint
 

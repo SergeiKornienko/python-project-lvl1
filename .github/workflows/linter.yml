@@ -1,0 +1,14 @@
+name: linter-flake8
+on: [push]
+jobs:
+  linter:
+    name: lint code base
+    run-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Linter
+        run: make lint
+
+    

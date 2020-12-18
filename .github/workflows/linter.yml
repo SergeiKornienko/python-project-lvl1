@@ -3,7 +3,7 @@ on: [push]
 jobs:
   linter:
     name: lint code base
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

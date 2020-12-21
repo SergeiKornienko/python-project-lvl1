@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from brain_games import welcome_user
+from brain_games import cli
 
 
 def intro(greet):
@@ -9,7 +9,7 @@ def intro(greet):
 
 def main():
     intro('Welcome to the Brain Games!')
-    welcome_user()
+    cli.welcome_user()
 
 
 if __name__ == '__main__':

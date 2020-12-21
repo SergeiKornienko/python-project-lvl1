@@ -1,11 +1,10 @@
-#!usr/bin/env python
+#!/usr/bin/env python
 
-from brain_games import welcome_user
+from brain_games import game_even
 
 
 def main():
-    pass
-
+    game_even.game_even()
 
 if __name__ == '__main__':
     main()

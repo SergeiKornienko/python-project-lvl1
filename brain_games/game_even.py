@@ -28,5 +28,3 @@ def game_even():
             return
         index += 1
     return print('Congratulations, {}!'.format(name))
-
-game_even()

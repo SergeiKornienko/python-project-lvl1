@@ -12,16 +12,12 @@ def game_even():
         num = random.randint(0, 100)
         answer = prompt.string('Question: {}\nYour answer: '.format(num))
         num_even = check_even.check_even(num)
-        if num_even == True:
-            true = 'yes'
-        else:
-            true = 'no'
-        if answer == 'yes' and num_even == True:
+        if answer == num_even:
             print('Correct!')
-        elif answer == 'no' and num_even == False:
+        elif answer == num_even:
             print('Correct!')
         else:
-            print("'{}' is wrong answer ;). Correct answer was '{}'".format(answer, true))
+            print("'{}' is wrong answer ;). Correct answer was '{}'".format(answer, num_even))
             print("Let's try again, {}!".format(name))
             return
         index += 1

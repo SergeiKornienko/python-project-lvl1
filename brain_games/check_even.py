@@ -6,6 +6,7 @@ def check_even(num):
     else:
         return 'no'
 
+
 assert check_even(8) == 'yes'
 assert check_even(0) == 'no'
 assert check_even(55) == 'no'

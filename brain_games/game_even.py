@@ -1,6 +1,8 @@
-import prompt, random
+import prompt
+import random
 from brain_games import cli
 from brain_games import check_even
+
 
 def game_even():
     print('Welcome to the Brain Games!')
@@ -17,10 +19,11 @@ def game_even():
         elif answer == num_even:
             print('Correct!')
         else:
-            print("'{}' is wrong answer ;). Correct answer was '{}'".format(answer, num_even))
+            print(
+                "'{}' is wrong answer ;).\
+                Correct answer was '{}'".format(answer, num_even)
+                )
             print("Let's try again, {}!".format(name))
             return
         index += 1
     return print('Congratulations, {}!'.format(name))
-
-game_even()

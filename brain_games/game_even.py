@@ -1,9 +1,9 @@
 import prompt, random
-
+from brain_games import cli
 
 def game_even():
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
+    name = cli.welcome_user()
     print('Hello, {}!'.format(name))
     print('Answer "yes" if the number is even, otherwise answer "no".')
     index = 0
@@ -28,3 +28,5 @@ def game_even():
             return
         index += 1
     return print('Congratulations, {}!'.format(name))
+
+game_even()

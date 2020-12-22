@@ -1,5 +1,6 @@
 import prompt, random
 from brain_games import cli
+from brain_games import check_even
 
 def game_even():
     print('Welcome to the Brain Games!')
@@ -10,10 +11,7 @@ def game_even():
     while index < 3:
         num = random.randint(0, 100)
         answer = prompt.string('Question: {}\nYour answer: '.format(num))
-        if num % 2 == 0:
-            num_even = True
-        else:
-            num_even = False
+        num_even = check_even.check_even(num)
         if num_even == True:
             true = 'yes'
         else:

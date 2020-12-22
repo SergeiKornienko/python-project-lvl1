@@ -1,12 +1,15 @@
-"""introduction."""
+"""Question to player."""
 
 import prompt
 
-"""intro function"""
 
+def welcome_user(question):
+    """Ask question and get ansver.
 
-def welcome_user():
+    Args:
+        question: str
 
-    name = prompt.string('May I have your name? ')
-
-    return name
+    Returns:
+        return: str
+    """
+    return prompt.string(question)

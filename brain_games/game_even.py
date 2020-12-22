@@ -7,7 +7,6 @@ from brain_games import check_even
 def game_even():
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
-    print('Hello, {}!'.format(name))
     print('Answer "yes" if the number is even, otherwise answer "no".')
     index = 0
     while index < 3:
@@ -20,8 +19,8 @@ def game_even():
             print('Correct!')
         else:
             print(
-                "'{}' is wrong answer ;).\
-                Correct answer was '{}'".format(answer, num_even)
+                ("'{}' is wrong answer ;). "+\
+                "Correct answer was '{}'.").format(answer, num_even)
                 )
             print("Let's try again, {}!".format(name))
             return

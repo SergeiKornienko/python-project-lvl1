@@ -1,12 +1,13 @@
+"""Check number even or uneven."""
+
+
 def check_even(num):
-    if num == 0:
-        return 'no'
-    elif num % 2 == 0:
-        return 'yes'
-    else:
-        return 'no'
+    """Check num even or uneven.
 
+    Args:
+        num: int
 
-assert check_even(8) == 'yes'
-assert check_even(0) == 'no'
-assert check_even(55) == 'no'
+    Returns:
+        Return 'yes' or 'no'.
+    """
+    return 'no' if num == 0 or num % 2 != 0 else 'yes'

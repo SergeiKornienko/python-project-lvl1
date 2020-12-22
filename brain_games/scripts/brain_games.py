@@ -9,7 +9,8 @@ def intro(greet):
 
 def main():
     intro('Welcome to the Brain Games!')
-    cli.welcome_user()
+    name = cli.welcome_user('May I have your name? ')
+    print('Hello, {}!'.format(name))
 
 
 if __name__ == '__main__':

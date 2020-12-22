@@ -1,3 +1,4 @@
+"""Main module of game brain-even."""
 import prompt
 import random
 from brain_games import cli
@@ -6,12 +7,13 @@ from brain_games import check_even
 
 def game_even():
     print('Welcome to the Brain Games!')
-    name = cli.welcome_user()
+    name = cli.welcome_user('May I have your name? ')
+    print('Hello, {}!'.format(name))
     print('Answer "yes" if the number is even, otherwise answer "no".')
     index = 0
     while index < 3:
         num = random.randint(0, 100)
-        answer = prompt.string('Question: {}\nYour answer: '.format(num))
+        answer = cli.welcome_user('Question: {}\nYour answer: '.format(num))
         num_even = check_even.check_even(num)
         if answer == num_even:
             print('Correct!')

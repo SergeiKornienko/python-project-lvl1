@@ -5,4 +5,4 @@
 
 ![Python CI](https://github.com/SergeyKornienko/python-project-lvl1/workflows/Python%20CI/badge.svg)
 
-https://asciinema.org/a/CTuI0pG2lGq0KVDoAqbCRTDgr
+https://asciinema.org/a/Fl3dsH8uvzbFCtTTOM4oLR6IN

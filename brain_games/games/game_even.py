@@ -8,7 +8,7 @@ def game_even():
 
     Returns:
         Return rules of the game,
-        answer of player,
+        question to player,
         true answer.
     """
     intro = 'Answer "yes" if the number is even, otherwise answer "no".'

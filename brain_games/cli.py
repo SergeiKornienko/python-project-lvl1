@@ -4,7 +4,7 @@ import prompt
 
 
 def welcome_user(question):
-    """Ask question and get ansver.
+    """Ask question and get answer.
 
     Args:
         question: str

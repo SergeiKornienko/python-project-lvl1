@@ -1,8 +1,6 @@
 """Main module of game brain-even."""
 
 from brain_games import cli
-from brain_games import greeting
-
 from brain_games.games import game_even
 
 def game_summon(name_game):
@@ -11,7 +9,9 @@ def game_summon(name_game):
     Returns:
         Return query to player.
     """
-    name = greeting.greet()
+    print('Welcome to the Brain Games!')  # noqa: WPS421
+    name = cli.welcome_user('May I have your name? ')
+    print('Hello, {a}!'.format(a=name))  # noqa: WPS421
     print((game_even.game_even())[0])
     
     index = 0

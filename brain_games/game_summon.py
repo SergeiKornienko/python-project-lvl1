@@ -1,8 +1,11 @@
 """Main module of brain-games."""
 
 from brain_games import cli
-from brain_games.games import game_progression, game_gcd  # noqa: F401, I001
-from brain_games.games import game_calc, game_even  # noqa: F401, I001
+from brain_games.games import game_calc  # noqa: F401
+from brain_games.games import game_even  # noqa: F401
+from brain_games.games import game_gcd  # noqa: F401
+from brain_games.games import game_prime  # noqa: F401
+from brain_games.games import game_progression  # noqa: F401
 
 
 def game_summon(name_game):

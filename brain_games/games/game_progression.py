@@ -11,9 +11,17 @@ def game_progression():
         question to player,
         true answer.
     """
-    arg1 = random.randint(1, 100)  # noqa: S311, WPS432
-    arg2 = random.randint(1, 10)  # noqa: S311, WPS432
-    miss_number = random.randint(0, 9)  # noqa: S311, WPS432
+    begin_interval_nums = 1
+    end_interval_nums = 100
+    arg1 = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
+    begin_interval_prorgess = 1
+    end_interval_prorgess = 10
+    arg2 = random.randint(  # noqa: S311
+        begin_interval_prorgess, end_interval_prorgess,
+        )
+    begin_miss_num = 0
+    end_miss_num = 9
+    miss_number = random.randint(begin_miss_num, end_miss_num)  # noqa: S311
     question = ''
     index = 0
     while index <= 9:

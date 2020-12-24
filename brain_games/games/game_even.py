@@ -12,7 +12,11 @@ def game_even():
         true answer.
     """
     intro = 'Answer "yes" if the number is even, otherwise answer "no".'
-    question = random.randint(0, 100)  # noqa: S311
+    begin_interval_num = 0
+    end_interval_num = 100
+    question = random.randint(  # noqa: S311
+        begin_interval_num, end_interval_num,
+        )
     if question == 0 or question % 2 != 0:
         true_answer = 'no'
     else:

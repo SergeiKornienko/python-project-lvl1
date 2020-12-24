@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet_code"
 version = "0.3.0"
-description = ["Logic games package for the terminal. Designed as a training project."
+description = "Logic games package for the terminal. Designed as a training project."
 authors = ["Sergey Kornienko <skornienko29@gmail.com>"]
 packages = [
   { include = "brain_games" },
@@ -10,7 +10,7 @@ classifiers = [
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
-repository = ["https://github.com/SergeyKornienko/python-project-lvl1"]
+repository = "https://github.com/SergeyKornienko/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.8"

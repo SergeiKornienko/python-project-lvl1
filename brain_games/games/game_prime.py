@@ -11,7 +11,9 @@ def game_prime():
         question to player,
         true answer.
     """
-    arg = random.randint(1, 100)  # noqa: S311, WPS432
+    begin_interval_nums = 1
+    end_interval_nums = 100
+    arg = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
     question = str(arg)
     intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     index = 2

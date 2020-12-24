@@ -12,9 +12,15 @@ def game_calc():
         true answer.
     """
     intro = 'What is the result of the expression?'
-    arg1 = random.randint(0, 20)  # noqa: S311, WPS432
-    arg2 = random.randint(0, 20)  # noqa: S311, WPS432
-    operation = random.randint(1, 3)  # noqa: S311, WPS432
+    begin_interval_nums = 0
+    end_interval_nums = 20
+    arg1 = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
+    arg2 = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
+    choice_operation_begin = 1
+    choice_operation_end = 3
+    operation = random.randint(  # noqa: S311
+        choice_operation_begin, choice_operation_end,
+        )
     if operation == 1:
         task = ('{a} + {b}'.format(a=arg1, b=arg2), str(arg1 + arg2))
     elif operation == 2:

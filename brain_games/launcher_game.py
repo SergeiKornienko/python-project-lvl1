@@ -13,8 +13,8 @@ def launch_game(game):
         Return query to player.
     """
     print('Welcome to the Brain Games!')  # noqa: WPS421
-    name = cli.welcome_user('May I have your name? ')
-    print('Hello, {a}!'.format(a=name))  # noqa: WPS421
+    player_name = cli.welcome_user('May I have your name? ')
+    print('Hello, {a}!'.format(a=player_name))  # noqa: WPS421
     print(game.get_data_of_game()[0])  # noqa: WPS421
     index = 0
     while index < 3:
@@ -33,9 +33,9 @@ def launch_game(game):
                  ).format(a=answer, b=true_answer),
                 )
             return print(  # noqa: WPS421
-                "Let's try again, {a}!".format(a=name),
+                "Let's try again, {a}!".format(a=player_name),
             )
         index += 1
     return print(  # noqa: WPS421
-        'Congratulations, {a}!'.format(a=name),
+        'Congratulations, {a}!'.format(a=player_name),
         )

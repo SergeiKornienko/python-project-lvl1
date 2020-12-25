@@ -1,12 +1,13 @@
 #!/usr/bin/env python
-"""Scripts for power brain-gcd."""
+"""Script for launch brain-gcd."""
 
-from brain_games import game_summon
+from brain_games import launcher_game
+from brain_games.games import game_gcd
 
 
 def main():
-    """Power game_gcd()."""
-    game_summon.game_summon('game_gcd.game_gcd')
+    """launch game_gcd()."""
+    launcher_game.launch_game(game_gcd)
 
 
 if __name__ == '__main__':

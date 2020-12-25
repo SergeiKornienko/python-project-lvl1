@@ -3,7 +3,7 @@
 import random
 
 
-def game_even():
+def get_data_of_game():
     """Ask question and check num even or uneven.
 
     Returns:

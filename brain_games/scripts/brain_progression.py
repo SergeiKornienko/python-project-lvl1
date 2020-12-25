@@ -1,12 +1,13 @@
 #!/usr/bin/env python
-"""Scripts for power brain-progression."""
+"""Script for launch brain-progression."""
 
-from brain_games import game_summon
+from brain_games import launcher_game
+from brain_games.games import game_progression
 
 
 def main():
-    """Power game_progression()."""
-    game_summon.game_summon('game_progression.game_progression')
+    """Launch game_progression()."""
+    launcher_game.launch_game(game_progression)
 
 
 if __name__ == '__main__':

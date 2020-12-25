@@ -3,7 +3,7 @@
 import random
 
 
-def game_prime():
+def get_data_of_game():
     """Ask question and push true answer.
 
     Returns:

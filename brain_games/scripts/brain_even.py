@@ -1,12 +1,13 @@
 #!/usr/bin/env python
-"""Scripts for power brain-even."""
+"""Script for launch brain-even."""
 
-from brain_games import game_summon
+from brain_games import launcher_game
+from brain_games.games import game_even
 
 
 def main():
-    """Power game_even()."""
-    game_summon.game_summon('game_even.game_even')
+    """Launch game_even()."""
+    launcher_game.launch_game(game_even)
 
 
 if __name__ == '__main__':

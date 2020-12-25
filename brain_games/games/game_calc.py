@@ -3,7 +3,7 @@
 import random
 
 
-def game_calc():
+def get_data_of_game():
     """Ask question and check of calculations.
 
     Returns:

@@ -15,10 +15,11 @@ def get_data_of_game():
     end_interval_nums = 100
     arg = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
     question = str(arg)
-    intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    intro_of_game = ('Answer "yes" if given number is prime.'
+                     ' Otherwise answer "no".')
     index = 2
     while index <= arg / 2:
         if arg % index == 0:
-            return (intro, (question, 'no'))
+            return (intro_of_game, (question, 'no'))
         index += 1
-    return (intro, (question, 'yes'))
+    return (intro_of_game, (question, 'yes'))

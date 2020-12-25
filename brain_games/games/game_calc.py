@@ -11,7 +11,7 @@ def get_data_of_game():
         question to player,
         true answer.
     """
-    intro = 'What is the result of the expression?'
+    intro_of_game = 'What is the result of the expression?'
     begin_interval_nums = 0
     end_interval_nums = 20
     arg1 = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
@@ -21,9 +21,12 @@ def get_data_of_game():
     operation = random.randint(  # noqa: S311
         choice_operation_begin, choice_operation_end)
     if operation == 1:
-        task = ('{a} + {b}'.format(a=arg1, b=arg2), str(arg1 + arg2))
+        question_and_true_answer = (
+            '{a} + {b}'.format(a=arg1, b=arg2), str(arg1 + arg2))
     elif operation == 2:
-        task = ('{a} - {b}'.format(a=arg1, b=arg2), str(arg1 - arg2))
+        question_and_true_answer = (
+            '{a} - {b}'.format(a=arg1, b=arg2), str(arg1 - arg2))
     elif operation == 3:
-        task = ('{a} * {b}'.format(a=arg1, b=arg2), str(arg1 * arg2))
-    return (intro, task)
+        question_and_true_answer = (
+            '{a} * {b}'.format(a=arg1, b=arg2), str(arg1 * arg2))
+    return (intro_of_game, question_and_true_answer)

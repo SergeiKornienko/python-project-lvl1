@@ -11,7 +11,8 @@ def get_data_of_game():
         question to player,
         true answer.
     """
-    intro = 'Answer "yes" if the number is even, otherwise answer "no".'
+    intro_of_game = ('Answer "yes" if the number is even,'
+                     ' otherwise answer "no".')
     begin_interval_num = 0
     end_interval_num = 100
     question = random.randint(  # noqa: S311
@@ -20,4 +21,4 @@ def get_data_of_game():
         true_answer = 'no'
     else:
         true_answer = 'yes'
-    return (intro, (question, true_answer))
+    return (intro_of_game, (question, true_answer))

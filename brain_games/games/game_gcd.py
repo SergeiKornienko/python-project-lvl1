@@ -11,7 +11,7 @@ def get_data_of_game():
         question to player,
         true answer.
     """
-    intro = 'Find the greatest common divisor of given numbers.'
+    intro_of_game = 'Find the greatest common divisor of given numbers.'
     begin_interval_nums = 1
     end_interval_nums = 20
     arg1 = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
@@ -20,5 +20,5 @@ def get_data_of_game():
     divider = min(arg1, arg2)  # noqa: S311
     while divider >= 1:
         if arg1 % divider == 0 and arg2 % divider == 0:
-            return (intro, (question, str(divider)))
+            return (intro_of_game, (question, str(divider)))
         divider -= 1

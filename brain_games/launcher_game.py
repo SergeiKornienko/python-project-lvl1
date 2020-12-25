@@ -19,14 +19,14 @@ def launch_game(game):
     index = 0
     while index < 3:
         (question, true_answer) = (game.get_data_of_game()[1])  # noqa: WPS421
-        answer = cli.welcome_user((
+        answer_of_player = cli.welcome_user((
             'Question: {a}\nYour answer: ').format(a=question))
-        if answer == true_answer:
+        if answer_of_player == true_answer:
             print('Correct!')  # noqa: WPS421
         else:
             print(  # noqa: WPS421
                 ("'{a}' is wrong answer ;). Correct answer was '{b}'."
-                 ).format(a=answer, b=true_answer))
+                 ).format(a=answer_of_player, b=true_answer))
             return print(  # noqa: WPS421
                 "Let's try again, {a}!".format(a=player_name),
             )

@@ -5,14 +5,22 @@
 
 ![Python CI](https://github.com/SergeyKornienko/python-project-lvl1/workflows/Python%20CI/badge.svg)
 
-https://asciinema.org/a/Fl3dsH8uvzbFCtTTOM4oLR6IN
-
-https://asciinema.org/a/I6SXEpnkD8VUOIBcFwgjp8Ipy
-
-https://asciinema.org/a/WgWFnxQeAnGvxyyq6PWMISFLf
-
-https://asciinema.org/a/Lqk2EP60w2BgKTXTPXHHAe6H5
-
-https://asciinema.org/a/KZJBa1MBwONyuOasnchlOfuop
+<p>Brain-even</p>
 
 [![asciicast](https://asciinema.org/a/380614.svg)](https://asciinema.org/a/380614)
+
+<p>Brain-calc</p>
+
+[![asciicast](https://asciinema.org/a/380884.svg)](https://asciinema.org/a/380884)
+
+<p>Brain-gcd</p>
+
+[![asciicast](https://asciinema.org/a/380938.svg)](https://asciinema.org/a/380938)
+
+<p>Brain-prime</p>
+
+[![asciicast](https://asciinema.org/a/380995.svg)](https://asciinema.org/a/380995)
+
+<p>Brain-progression</p>
+
+[![asciicast](https://asciinema.org/a/380978.svg)](https://asciinema.org/a/380978)

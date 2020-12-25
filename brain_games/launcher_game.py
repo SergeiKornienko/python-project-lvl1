@@ -4,10 +4,10 @@ from brain_games import cli
 
 
 def launch_game(game):
-    """launch games.
+    """Launch games.
 
     Args:
-        name_game: str
+        game: str
 
     Returns:
         Return query to player.

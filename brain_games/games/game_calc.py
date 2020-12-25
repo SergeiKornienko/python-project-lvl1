@@ -19,8 +19,7 @@ def get_data_of_game():
     choice_operation_begin = 1
     choice_operation_end = 3
     operation = random.randint(  # noqa: S311
-        choice_operation_begin, choice_operation_end,
-        )
+        choice_operation_begin, choice_operation_end)
     if operation == 1:
         task = ('{a} + {b}'.format(a=arg1, b=arg2), str(arg1 + arg2))
     elif operation == 2:

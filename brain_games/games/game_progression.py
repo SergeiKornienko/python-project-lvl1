@@ -17,8 +17,7 @@ def get_data_of_game():
     begin_interval_prorgess = 1
     end_interval_prorgess = 10
     arg2 = random.randint(  # noqa: S311
-        begin_interval_prorgess, end_interval_prorgess,
-        )
+        begin_interval_prorgess, end_interval_prorgess)
     begin_miss_num = 0
     end_miss_num = 9
     miss_number = random.randint(begin_miss_num, end_miss_num)  # noqa: S311
@@ -32,5 +31,4 @@ def get_data_of_game():
         index += 1
     return (
         'What number is missing in the progression?',
-        (question, str(arg1 + arg2 * miss_number)),
-         )
+        (question, str(arg1 + arg2 * miss_number)))

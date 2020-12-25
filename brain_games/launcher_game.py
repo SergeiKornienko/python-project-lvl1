@@ -26,12 +26,10 @@ def launch_game(game):
         else:
             print(  # noqa: WPS421
                 ("'{a}' is wrong answer ;). Correct answer was '{b}'."
-                 ).format(a=answer, b=true_answer),
-                  )
+                 ).format(a=answer, b=true_answer))
             return print(  # noqa: WPS421
                 "Let's try again, {a}!".format(a=player_name),
             )
         index += 1
     return print(  # noqa: WPS421
-        'Congratulations, {a}!'.format(a=player_name),
-                 )
+        'Congratulations, {a}!'.format(a=player_name))

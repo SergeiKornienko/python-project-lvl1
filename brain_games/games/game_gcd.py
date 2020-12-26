@@ -3,7 +3,7 @@
 import random
 
 
-def get_data_of_game():
+def get_data_game():
     """Ask question and push true answer.
 
     Returns:

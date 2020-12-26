@@ -15,10 +15,10 @@ def launch_game(game):
     print('Welcome to the Brain Games!')  # noqa: WPS421
     player_name = cli.welcome_user('May I have your name? ')
     print('Hello, {a}!'.format(a=player_name))  # noqa: WPS421
-    print(game.get_data_of_game()[0])  # noqa: WPS421
+    print(game.get_data_game()[0])  # noqa: WPS421
     index = 0
     while index < 3:
-        (question, true_answer) = (game.get_data_of_game()[1])  # noqa: WPS421
+        (question, true_answer) = (game.get_data_game()[1])  # noqa: WPS421
         answer_of_player = cli.welcome_user((
             'Question: {a}\nYour answer: ').format(a=question))
         if answer_of_player == true_answer:

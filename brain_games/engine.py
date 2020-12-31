@@ -3,7 +3,7 @@
 from brain_games import cli
 
 
-def launch_game(game):
+def run(game):
     """Launch games.
 
     Args:

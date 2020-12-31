@@ -33,6 +33,6 @@ In this game you need to determine if the number is prime.
 
 # Brain-progression
 
-n this game you need to determine the missing number in a progression.
+In this game you need to determine the missing number in a progression.
 
 [![asciicast](https://asciinema.org/a/381252.svg)](https://asciinema.org/a/381252)

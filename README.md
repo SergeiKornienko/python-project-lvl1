@@ -5,22 +5,29 @@
 
 ![Python CI](https://github.com/SergeyKornienko/python-project-lvl1/workflows/Python%20CI/badge.svg)
 
+This program is a set of mathematical games for the terminal. The program is designed as an educational project. Three correct answers are required to win each game. In case of an incorrect answer, the game must be started again.
+
 <p>Brain-even</p>
+In this game, you need to determine whether the number is even or  uneven.
 
 [![asciicast](https://asciinema.org/a/381247.svg)](https://asciinema.org/a/381247)
 
 <p>Brain-calc</p>
+In this game you need to perform a mathematical calculation.
 
 [![asciicast](https://asciinema.org/a/381248.svg)](https://asciinema.org/a/381248)
 
 <p>Brain-gcd</p>
+In this game you need to find the greatest divisor of two numbers.
 
 [![asciicast](https://asciinema.org/a/381250.svg)](https://asciinema.org/a/381250)
 
 <p>Brain-prime</p>
+In this game you need to determine if the number is prime.
 
 [![asciicast](https://asciinema.org/a/381251.svg)](https://asciinema.org/a/381251)
 
 <p>Brain-progression</p>
+n this game you need to determine the missing number in a progression.
 
 [![asciicast](https://asciinema.org/a/381252.svg)](https://asciinema.org/a/381252)

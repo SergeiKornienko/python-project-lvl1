@@ -2,23 +2,36 @@
 
 import random
 
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
-def get_data_game():
+
+def calc_gcd(num1, num2):
+    """Find the greatest common divisor of given numbers.
+
+    Args:
+        num1: int
+        num2: int
+
+    Returns:
+        Return greatest common divisor.
+    """
+    divider = min(num1, num2)  # noqa: S311
+    while divider >= 1:
+        if num1 % divider == 0 and num2 % divider == 0:
+            return divider
+        divider -= 1
+
+
+def generate_round():
     """Ask question and push true answer.
 
     Returns:
-        Return rules of the game,
-        question to player,
+        Return question to player,
         true answer.
     """
-    intro_of_game = 'Find the greatest common divisor of given numbers.'
-    begin_interval_nums = 1
-    end_interval_nums = 20
-    arg1 = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
-    arg2 = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
-    question = '{a} {b}'.format(a=arg1, b=arg2)
-    divider = min(arg1, arg2)  # noqa: S311
-    while divider >= 1:
-        if arg1 % divider == 0 and arg2 % divider == 0:
-            return (intro_of_game, (question, str(divider)))
-        divider -= 1
+    num1 = random.randint(1, 20)  # noqa: S311
+    num2 = random.randint(1, 20)  # noqa: S311
+    return (
+        '{a} {b}'.format(a=num1, b=num2),
+        str(calc_gcd(num1, num2))
+        )

@@ -2,23 +2,28 @@
 
 import random
 
+DESCRIPTION = ('Answer "yes" if the number is even,'
+               ' otherwise answer "no".')
 
-def get_data_game():
-    """Ask question and check num even or uneven.
+
+def check_even(num):
+    """Check num even or uneven.
+
+    Args:
+        num: int
 
     Returns:
-        Return rules of the game,
-        question to player,
+        Return string 'yes' or 'no'.
+    """
+    return 'no' if num == 0 or num % 2 != 0 else 'yes'
+
+
+def generate_round():
+    """Ask question and push true answer.
+
+    Returns:
+        Return question to player,
         true answer.
     """
-    intro_of_game = ('Answer "yes" if the number is even,'
-                     ' otherwise answer "no".')
-    begin_interval_num = 0
-    end_interval_num = 100
-    question = random.randint(  # noqa: S311
-        begin_interval_num, end_interval_num)
-    if question == 0 or question % 2 != 0:
-        true_answer = 'no'
-    else:
-        true_answer = 'yes'
-    return (intro_of_game, (question, true_answer))
+    num = random.randint(0, 100)  # noqa: S311
+    return (num, check_even(num))

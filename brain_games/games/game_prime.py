@@ -2,24 +2,33 @@
 
 import random
 
+DESCRIPTION = ('Answer "yes" if given number is prime.'
+               ' Otherwise answer "no".')
 
-def get_data_game():
+
+def chek_prime(num):
+    """Check num even or uneven.
+
+    Args:
+        num: int
+
+    Returns:
+        Return string 'yes' or 'no'.
+    """
+    index = 2
+    while index <= num / 2:
+        if num % index == 0:
+            return 'no'
+        index += 1
+    return 'yes'
+
+
+def generate_round():
     """Ask question and push true answer.
 
     Returns:
-        Return rules of the game,
-        question to player,
+        Return question to player,
         true answer.
     """
-    begin_interval_nums = 1
-    end_interval_nums = 100
-    arg = random.randint(begin_interval_nums, end_interval_nums)  # noqa: S311
-    question = str(arg)
-    intro_of_game = ('Answer "yes" if given number is prime.'
-                     ' Otherwise answer "no".')
-    index = 2
-    while index <= arg / 2:
-        if arg % index == 0:
-            return (intro_of_game, (question, 'no'))
-        index += 1
-    return (intro_of_game, (question, 'yes'))
+    num = random.randint(1, 100)  # noqa: S311
+    return (num, chek_prime(num))

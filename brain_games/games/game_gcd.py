@@ -31,7 +31,5 @@ def generate_round():
     """
     num1 = random.randint(1, 20)  # noqa: S311
     num2 = random.randint(1, 20)  # noqa: S311
-    return (
-        '{a} {b}'.format(a=num1, b=num2),
-        str(calc_gcd(num1, num2))
-        )
+    return ('{a} {b}'.format(a=num1, b=num2),
+            str(calc_gcd(num1, num2)))

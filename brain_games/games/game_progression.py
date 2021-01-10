@@ -16,11 +16,10 @@ def generate_progression(first_num, diff_progression, length_progression):
     Returns:
         Return progression.
     """
-    progression = ''
+    progression = []
     index = 0
     while index < length_progression:
-        progression += '{a} '.format(
-            a=str(first_num + diff_progression * index))
+        progression.append(first_num + diff_progression * index)
         index += 1
     return progression
 
@@ -38,10 +37,12 @@ def generate_round():
     length_progression = 10
     miss_number = random.randint(0, 9)  # noqa: S311
     true_answer = first_num + diff_progression * miss_number
-    first_part = generate_progression(
-        first_num, diff_progression, miss_number)
-    second_part = generate_progression(
-        true_answer + diff_progression, diff_progression,
-        length_progression - miss_number - 1)
-    question = '{a}{b}{c}'.format(a=first_part, b='.. ', c=second_part)
+    progression = generate_progression(
+        first_num, diff_progression, length_progression)
+    question = ''
+    for (i, _) in enumerate(progression):
+        if i == miss_number:
+            question += '.. '
+        else:
+            question += '{a} '.format(a=progression[i])
     return (question, str(true_answer))

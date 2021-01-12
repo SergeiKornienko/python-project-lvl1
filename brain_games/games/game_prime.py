@@ -15,6 +15,8 @@ def chek_prime(num):
     Returns:
         Return string 'yes' or 'no'.
     """
+    if num == 1:
+        return 'no'
     index = 2
     while index <= num / 2:
         if num % index == 0:

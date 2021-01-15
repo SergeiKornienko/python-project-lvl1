@@ -19,7 +19,7 @@ def generate_progression(first_num, diff_progression, length_progression):
     progression = []
     index = 0
     while index < length_progression:
-        progression.append(first_num + diff_progression * index)
+        progression.append(str(first_num + diff_progression * index))
         index += 1
     return progression
 
@@ -36,13 +36,8 @@ def generate_round():
     diff_progression = random.randint(1, 10)  # noqa: S311
     length_progression = 10
     miss_number = random.randint(0, 9)  # noqa: S311
-    true_answer = first_num + diff_progression * miss_number
     progression = generate_progression(
         first_num, diff_progression, length_progression)
-    question = ''
-    for (i, _) in enumerate(progression):
-        if i == miss_number:
-            question += '.. '
-        else:
-            question += '{a} '.format(a=progression[i])
-    return (question, str(true_answer))
+    true_answer = progression.pop(miss_number)
+    progression.insert(miss_number, '..')
+    return ' '.join(progression), true_answer

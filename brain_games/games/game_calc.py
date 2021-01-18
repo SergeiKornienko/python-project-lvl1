@@ -6,7 +6,7 @@ import random
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def expression():
+def generate_expression():
     """Generate expression.
 
     Returns:
@@ -26,12 +26,12 @@ def generate_round():
         Return question to player,
         true answer.
     """
-    (operand1, operand2, operation) = expression()
+    (operand1, operand2, operation) = generate_expression()
     question = '{a} {b} {c}'.format(a=operand1, b=operation, c=operand2)
     if operation == '+':
-        true_answer = operator.add(operand1, operand2)
+        answer = operator.add(operand1, operand2)
     elif operation == '-':
-        true_answer = operator.sub(operand1, operand2)
+        answer = operator.sub(operand1, operand2)
     elif operation == '*':
-        true_answer = operator.mul(operand1, operand2)
-    return (question, str(true_answer))
+        answer = operator.mul(operand1, operand2)
+    return question, str(answer)

@@ -6,16 +6,16 @@ DESCRIPTION = ('Answer "yes" if the number is even,'
                ' otherwise answer "no".')
 
 
-def check_even(num):
+def is_even(num):
     """Check num even or uneven.
 
     Args:
         num: int
 
     Returns:
-        Return string 'yes' or 'no'.
+        Return True or False.
     """
-    return 'no' if num == 0 or num % 2 != 0 else 'yes'
+    return num != 0 and num % 2 == 0
 
 
 def generate_round():
@@ -26,4 +26,8 @@ def generate_round():
         true answer.
     """
     num = random.randint(0, 100)  # noqa: S311
-    return (num, check_even(num))
+    if is_even(num) is True:
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return num, answer

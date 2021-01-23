@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet_code"
+name = "hexlet-code"
 version = "0.3.4"
 description = "Logic games package for the terminal. Designed as a training project."
 authors = ["Sergey Kornienko <skornienko29@gmail.com>"]
